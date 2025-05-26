@@ -838,9 +838,9 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 -z-10"></div>
           <div className="w-full mx-auto px-1">
             <div className="bg-gray-100 dark:bg-gray-800/50 p-1 min-h-screen">
-              <div className="flex flex-col gap-1 h-full">
+              <div className="flex flex-col gap-2 h-full">
                 {/* 첫 번째 2열 그리드 */}
-                <div className="grid grid-cols-2 gap-1 h-[22vh]">
+                <div className="grid grid-cols-2 gap-2 h-[22vh]">
                   {/* 오늘의 개발일기 */}
                   <div className="w-full h-full [&>div]:h-full [&>div]:w-full">
                     {gridCardComponents.mbtiCard}
@@ -863,7 +863,7 @@ export default function Home() {
                 </div>
                 
                 {/* 두 번째 2열 그리드 */}
-                <div className="grid grid-cols-2 gap-1 h-[28vh]">
+                <div className="grid grid-cols-2 gap-2 h-[28vh]">
                   {/* wear os */}
                   <div className="w-full h-full [&>div]:h-full [&>div]:w-full">
                     {gridCardComponents.platformsCard}

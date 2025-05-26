@@ -1,0 +1,96 @@
+/* 그라디언트 텍스트 애니메이션 */
+.animate-gradient-text {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* 회전 애니메이션 */
+.animate-rotate-left {
+  animation: rotateLeft 6s infinite linear;
+  display: inline-block;
+}
+
+.animate-rotate-right {
+  animation: rotateRight 6s infinite linear;
+  display: inline-block;
+}
+
+/* 텍스트 나타남 애니메이션 */
+.animate-reveal-text {
+  overflow: hidden;
+  animation: revealText 2s forwards;
+}
+
+/* 노즐 상승 애니메이션 */
+.animate-nozzle-upward {
+  animation: nozzleUpward 3s infinite ease-in-out;
+}
+
+/* 흔들림 애니메이션 */
+.animate-shake {
+  animation: shake 0.5s infinite;
+  display: inline-block;
+}
+
+/* 애니메이션 키프레임 */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rotateLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateRight {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes revealText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nozzleUpward {
+  0%, 100% {
+    transform: translateY(140%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0) rotate(0); }
+  25% { transform: translate(1px, 1px) rotate(0.5deg); }
+  50% { transform: translate(0, -1px) rotate(0); }
+  75% { transform: translate(-1px, 0) rotate(-0.5deg); }
+  100% { transform: translate(0, 0) rotate(0); }
+} 
